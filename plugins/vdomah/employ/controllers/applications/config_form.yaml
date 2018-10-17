@@ -1,0 +1,10 @@
+name: Applications
+form: $/vdomah/employ/models/application/fields.yaml
+modelClass: Vdomah\Employ\Models\Application
+defaultRedirect: vdomah/employ/applications
+create:
+    redirect: 'vdomah/employ/applications/update/:id'
+    redirectClose: vdomah/employ/applications
+update:
+    redirect: vdomah/employ/applications
+    redirectClose: vdomah/employ/applications

@@ -1,0 +1,44 @@
+1539353764a:1:{s:8:"jobs.htm";a:16:{s:8:"fileName";s:8:"jobs.htm";s:7:"content";s:520:"title = "Jobs"
+url = "/jobs"
+layout = "noSidebar"
+is_hidden = 0
+role = 0
+permission = 0
+anonymous_only = 0
+logged_only = 0
+
+[employJobs]
+mode = "all"
+
+[employSearch]
+
+[employFilter]
+jobs_list_selector = "#job-list"
+==
+<div>
+    {% component 'employSearch' %}
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <div id="job-list">
+            {% component 'employJobs' %}
+        </div>
+    </div>
+    <div class="col-md-4">
+        {% component 'employFilter' %}
+    </div>
+</div>";s:5:"mtime";i:1539340113;s:6:"markup";s:285:"<div>
+    {% component 'employSearch' %}
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <div id="job-list">
+            {% component 'employJobs' %}
+        </div>
+    </div>
+    <div class="col-md-4">
+        {% component 'employFilter' %}
+    </div>
+</div>";s:4:"code";N;s:5:"title";s:4:"Jobs";s:3:"url";s:5:"/jobs";s:6:"layout";s:9:"noSidebar";s:9:"is_hidden";s:1:"0";s:4:"role";s:1:"0";s:10:"permission";s:1:"0";s:14:"anonymous_only";s:1:"0";s:11:"logged_only";s:1:"0";s:10:"employJobs";a:1:{s:4:"mode";s:3:"all";}s:12:"employSearch";a:0:{}s:12:"employFilter";a:1:{s:18:"jobs_list_selector";s:9:"#job-list";}}}

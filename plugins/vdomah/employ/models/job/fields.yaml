@@ -1,0 +1,54 @@
+fields:
+    name:
+        label: 'vdomah.employ::lang.fields.name'
+        span: auto
+        required: true
+        type: text
+    slug:
+        label: 'vdomah.employ::lang.fields.slug'
+        span: auto
+        required: true
+        preset:
+            field: name
+            type: slug
+        type: text
+    user:
+        label: 'vdomah.employ::lang.fields.user'
+        span: auto
+        required: true
+        type: relation
+    type:
+        label: 'vdomah.employ::lang.fields.type'
+        span: auto
+        required: true
+        type: relation
+    frequency:
+        label: 'vdomah.employ::lang.fields.frequency'
+        span: auto
+        type: relation
+    salary_min:
+        label: 'vdomah.employ::lang.fields.salary_min'
+        span: auto
+    salary_max:
+        label: 'vdomah.employ::lang.fields.salary_max'
+        span: auto
+    start_at:
+        label: 'vdomah.employ::lang.fields.start_at'
+        span: auto
+        type: datepicker
+        mode: date
+    description:
+         label: 'vdomah.employ::lang.fields.description'
+         span: auto
+         required: true
+         type: richeditor
+         size: large
+    categories:
+         label: 'vdomah.employ::lang.fields.categories'
+         span: auto
+         type: taglist
+         mode: relation
+    location:
+        label: 'vdomah.employ::lang.fields.location'
+        span: auto
+        type: text

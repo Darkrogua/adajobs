@@ -1,0 +1,48 @@
+plugin:
+    name: 'vdomah.employ::lang.plugin.name'
+    description: 'vdomah.employ::lang.plugin.description'
+    author: Vdomah
+    icon: oc-icon-briefcase
+    homepage: ''
+navigation:
+    employ:
+        label: 'vdomah.employ::lang.menu.main'
+        url: vdomah/employ/jobs
+        icon: icon-briefcase
+        sideMenu:
+            employ-jobs:
+                label: 'vdomah.employ::lang.menu.jobs'
+                url: vdomah/employ/jobs
+                icon: icon-briefcase
+            employ-seekers:
+                label: 'vdomah.employ::lang.menu.seekers'
+                url: vdomah/employ/seekers
+                icon: icon-users
+            employ-employers:
+                label: 'vdomah.employ::lang.menu.employers'
+                url: vdomah/employ/employers
+                icon: icon-user
+            employ-applications:
+                label: 'vdomah.employ::lang.menu.applications'
+                url: vdomah/employ/applications
+                icon: icon-file-text
+            employ-types:
+                label: 'vdomah.employ::lang.menu.types'
+                url: vdomah/employ/types
+                icon: icon-sitemap
+            employ-frequencies:
+                label: 'vdomah.employ::lang.menu.frequencies'
+                url: vdomah/employ/frequencies
+                icon: icon-sort
+            employ-categories:
+                label: 'vdomah.employ::lang.menu.categories'
+                url: vdomah/employ/categories
+                icon: icon-folder-o
+            employ-skills:
+                label: 'vdomah.employ::lang.menu.skills'
+                url: vdomah/employ/skills
+                icon: icon-soccer-ball-o
+            employ-institutions:
+                label: 'vdomah.employ::lang.menu.institutions'
+                url: vdomah/employ/institutions
+                icon: icon-institution

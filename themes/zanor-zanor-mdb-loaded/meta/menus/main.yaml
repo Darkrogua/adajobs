@@ -1,0 +1,20 @@
+name: main
+items:
+    -
+        title: Welcome
+        type: cms-page
+        code: ''
+        reference: welcome
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Jobs
+        type: cms-page
+        code: ''
+        reference: jobs
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'

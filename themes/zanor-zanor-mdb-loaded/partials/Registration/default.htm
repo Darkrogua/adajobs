@@ -1,0 +1,164 @@
+description = "registration"
+==
+
+{% set arError = Registration.getErrorMessage %}
+{% set arForm = Registration.getOldFormData %}
+<style>
+#div_jobseeker{display:none;}
+#div_employer{display:none;}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$( document ).ready(function() {
+     $('#field-role_id').change(function () 
+     {
+       var valueSelected = this.value;
+       if(valueSelected == 1)
+       {
+           $('#userRole').val('1');
+          $("#div_jobseeker").show();
+          $("#div_employer").hide();
+       }
+       else if(valueSelected == 2)
+       {
+          $("#div_employer").show()
+          $("#div_jobseeker").hide()
+          $('#userRole').val('2');
+       }
+       else
+       {
+          $("#div_jobseeker").hide()
+          $("#div_employer").hide()
+          $('#userRole').val('');
+       }
+     });
+});
+</script>
+<form href="{{ 'register'|page }}" class="border border-light p-5">
+    <p class="h4 text-center mb-4">Register</p>
+
+     <div class="md-form">
+          <label for="field-company-name">User Role</label>
+          <br /><br />
+          <select name="role_id" id="field-role_id" class="form-control mb-4" required>
+           <option value="">Select User Role</option>
+           <option value="1">Job Seeker</option>
+           <option value="2">Employer</option>
+          </select>
+    </div>
+    
+    <div class="md-form">
+        <label for="field-company-name">Name</label>
+        <input class="form-control mb-4" type="text" id="field-name" name="name" value="{{ arForm.name }}" required>
+    </div>    
+        
+    <div class="md-form">
+        <label for="field-company-name">Last Name</label>
+        <input class="form-control mb-4" type="text" id="field-last_name" name="last_name" value="{{ arForm.last_name }}">
+    </div>    
+    
+    <div class="md-form">
+        <label for="field-email">Email</label>
+        <input class="form-control mb-4" type="email" id="field-email" name="email" value="{{ arForm.email }}" required>
+        {% if arError.message is not empty and arError.field == 'email' %}
+            <p class="font-weight-normal red-text">{{ arError.message }}</p>
+        {% endif %}
+    </div>
+
+    <div class="md-form">
+        <label for="field-password">Password</label>
+        <input class="form-control mb-4" type="password" id="field-password" name="password" required>
+    </div>
+
+    <div class="md-form">
+        <label for="field-password-confirmation">Password confirmation</label>
+        <input class="form-control mb-4" type="password" id="field-password-confirmation" name="password_confirmation" required>
+    </div>       
+    
+    <div class="md-form">
+          <label for="field-company-name">Phone</label>
+          <input class="form-control mb-4" type="text" id="field-phone" name="phone" value="{{ arForm.phone }}" required>
+    </div>
+                 
+   <div id="div_jobseeker" class="div_jobseeker">
+  
+     <div class="md-form">
+          <label for="field-company-name">IC No.</label>
+          <input class="form-control mb-4" type="text" id="field-ic" name="property[ic]" value="{{ arForm.ic }}">
+      </div>             
+      
+         <div class="md-form">
+          <label for="field-company-name">Skills</label>
+          <input class="form-control mb-4" type="text" id="field-skills" name="property[skills]" value="{{ arForm.skills }}">
+      </div>
+      
+      
+      <div class="md-form">
+          <label>Resume</label>     <br /><br />
+          <input type="file" id="field-resume" name="property[resume]" value="Resume">
+      </div>
+      
+      
+      <div class="md-form">
+          <label for="field-company-name">Age</label>
+          <input class="form-control mb-4" type="text" id="field-age" name="property[age]" value="{{ arForm.age }}">
+      </div>
+      
+      
+         <div class="md-form">
+          <label for="field-company-name">Gender</label>  
+           <br /><br /> 
+           <input type="radio" name="property[gender]" value="Male"> Male<br>
+           <input type="radio" name="property[gender]" value="Female"> Female<br>  
+        </div>
+      
+      
+         <div class="md-form">
+          <label for="field-company-name">Institution</label>
+          <input class="form-control mb-4" type="text" id="field-institution" name="property[institution]" value="{{ arForm.institution }}">
+      </div>
+      
+      
+      <div class="md-form">
+          <label for="field-company-name">About (Bio)</label>
+          <input class="form-control mb-4" type="text" id="field-about" name="property[about]" value="{{ arForm.about }}">
+      </div>
+    
+    </div>
+    
+    
+   <div id="div_employer" class="div_employer">
+        
+        <div class="md-form">
+            <label for="field-company-name">Company Name</label>
+            <input class="form-control mb-4" type="text" id="field-company_name" name="property[company_name]" value="{{ arForm.company_name }}">
+        </div>              
+            
+        <div class="md-form">
+            <label for="field-company-name">Company Website</label>
+            <input class="form-control mb-4" type="text" id="field-company_website" name="property[company_website]" value="{{ arForm.company_website }}">
+        </div>             
+            
+        <div class="md-form">
+            <label for="field-company-name">Company Description</label>
+            <input class="form-control mb-4" type="text" id="field-company_description" name="property[company_description]" value="{{ arForm.company_description }}">
+        </div>           
+            
+        <div class="md-form">
+            <label for="field-company-name">Location (Suburb)</label>
+            <input class="form-control mb-4" type="text" id="field-suburb" name="property[suburb]" value="{{ arForm.suburb }}">
+        </div>        
+    
+    </div>    
+     <input class="form-control mb-4" type="hidden" id="userRole" name="property[user_role_id]" value="">
+     
+    <button class="btn btn-info btn-block my-4" type="submit">Register</button>
+    <p class="text-center">Already have an account?
+        <a href="{{ 'login'|page }}">Login</a>
+    </p>
+
+</form>
+
+{% if arError.message is not empty %}
+    <p class="font-weight-normal red-text">{{ arError.message }}</p>
+{% endif %}

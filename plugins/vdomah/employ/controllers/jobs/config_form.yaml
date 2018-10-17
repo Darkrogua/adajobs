@@ -1,0 +1,10 @@
+name: Jobs
+form: $/vdomah/employ/models/job/fields.yaml
+modelClass: Vdomah\Employ\Models\Job
+defaultRedirect: vdomah/employ/jobs
+create:
+    redirect: 'vdomah/employ/jobs/update/:id'
+    redirectClose: vdomah/employ/jobs
+update:
+    redirect: vdomah/employ/jobs
+    redirectClose: vdomah/employ/jobs

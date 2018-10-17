@@ -1,0 +1,4 @@
+title: Jobs
+modelClass: Vdomah\Employ\Models\Job
+toolbar:
+    buttons: reorder_toolbar

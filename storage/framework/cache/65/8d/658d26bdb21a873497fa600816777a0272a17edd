@@ -1,0 +1,15 @@
+1539353764a:1:{s:10:"logout.htm";a:14:{s:8:"fileName";s:10:"logout.htm";s:7:"content";s:236:"title = "Logout"
+url = "/logout"
+layout = "noSidebar"
+is_hidden = 0
+role = 0
+permission = 0
+anonymous_only = 0
+logged_only = 0
+
+[Logout]
+mode = "submit"
+redirect_on = 1
+redirect_page = "welcome"
+==
+{% component 'Logout' %}";s:5:"mtime";i:1539340112;s:6:"markup";s:24:"{% component 'Logout' %}";s:4:"code";N;s:5:"title";s:6:"Logout";s:3:"url";s:7:"/logout";s:6:"layout";s:9:"noSidebar";s:9:"is_hidden";s:1:"0";s:4:"role";s:1:"0";s:10:"permission";s:1:"0";s:14:"anonymous_only";s:1:"0";s:11:"logged_only";s:1:"0";s:6:"Logout";a:3:{s:4:"mode";s:6:"submit";s:11:"redirect_on";s:1:"1";s:13:"redirect_page";s:7:"welcome";}}}

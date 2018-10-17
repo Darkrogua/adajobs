@@ -1,0 +1,31 @@
+1539353765a:1:{s:18:"_homepageIntro.htm";a:6:{s:8:"fileName";s:18:"_homepageIntro.htm";s:7:"content";s:391:"Description = "Homepage Intro Banner"
+==
+<!-- Card -->
+<div class="card card-cascade wider reverse">
+
+    <!-- Card image -->
+    <div class="view view-cascade overlay">
+        {% partial '_carousel' %}
+    </div>
+
+    <!-- Card content -->
+    <div class="card-body card-body-cascade text-center red">
+        {% component 'employSearch' %}
+    </div>
+
+</div>
+<!-- Card -->";s:5:"mtime";i:1539340116;s:6:"markup";s:348:"<!-- Card -->
+<div class="card card-cascade wider reverse">
+
+    <!-- Card image -->
+    <div class="view view-cascade overlay">
+        {% partial '_carousel' %}
+    </div>
+
+    <!-- Card content -->
+    <div class="card-body card-body-cascade text-center red">
+        {% component 'employSearch' %}
+    </div>
+
+</div>
+<!-- Card -->";s:4:"code";N;s:11:"Description";s:21:"Homepage Intro Banner";}}

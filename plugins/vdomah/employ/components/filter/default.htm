@@ -1,0 +1,11 @@
+{% set filters = __SELF__.filters %}
+{% set init_values = __SELF__.init_values %}
+
+{% for filter in filters %}
+<div class="filter-block">
+    <h4 class="filter-title">{{ filter.name }}</h4>
+    {% partial __SELF__~'::_filter' filter=filter init_values=init_values %}
+</div>
+{% endfor %}
+
+<div data-filter-handler="employFilter::onFilter"></div>

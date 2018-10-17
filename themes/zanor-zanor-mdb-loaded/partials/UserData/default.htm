@@ -1,0 +1,137 @@
+description = "User Profile"     
+
+[viewBag]  
+==
+{% set obUser = UserData.get %}
+
+{% if obUser.isNotEmpty %}
+    <div class="row px-3">
+        <div class="col-sm-6 p-2 mb-1 grey lighten-4 font-weight-normal">
+            Name:
+        </div>
+        <div class="col-sm-6 p-2 mb-1 border-grey">
+            {{ obUser.name }}
+        </div>
+        <div class="col-sm-6 p-2 mb-1 grey lighten-4 font-weight-normal">
+            Last Name:
+        </div>
+        <div class="col-sm-6 p-2 mb-1 border-grey">
+            {{ obUser.last_name }}
+        </div>
+       <div class="col-sm-6 p-2 mb-1 grey lighten-4 font-weight-normal">
+            Email:
+        </div>
+        <div class="col-sm-6 p-2 mb-1 border-grey">
+            {{ obUser.email }}
+        </div>
+        <div class="col-sm-6 p-2 mb-1 grey lighten-4 font-weight-normal">
+            Phone:
+        </div>
+        <div class="col-sm-6 p-2 mb-1 border-grey">
+            {{ obUser.phone }}
+        </div>
+        
+        {% if obUser.property.user_role_id == 2 %}
+        
+        
+        <div class="col-sm-6 p-2 mb-1 grey lighten-4 font-weight-normal">
+            Company Name: 
+        </div>
+        <div class="col-sm-6 p-2 mb-1 border-grey">
+         {{ obUser.property.company_name }}
+        </div>
+        <div class="col-sm-6 p-2 mb-1 grey lighten-4 font-weight-normal">
+            Company Description:
+        </div>
+        <div class="col-sm-6 p-2 mb-1 border-grey">
+         {{ obUser.property.company_description }}
+        </div>
+        <div class="col-sm-6 p-2 mb-1 grey lighten-4 font-weight-normal">
+            Company Website:
+        </div>
+        <div class="col-sm-6 p-2 mb-1 border-grey">
+          {{ obUser.property.company_website }}
+         </div>
+        
+        <div class="col-sm-6 p-2 mb-1 grey lighten-4 font-weight-normal">
+            Location (Suburb)  
+        </div>
+        <div class="col-sm-6 p-2 mb-1 border-grey">
+          
+           {{ obUser.property.suburb }}
+              
+        </div>
+        
+        {% elseif obUser.property.user_role_id == 1 %}
+           <div class="col-sm-6 p-2 mb-1 grey lighten-4 font-weight-normal">
+            IC No:
+        </div>
+        
+        <div class="col-sm-6 p-2 mb-1 border-grey">
+            {{ obUser.property.ic }}
+        </div>
+        
+        <div class="col-sm-6 p-2 mb-1 grey lighten-4 font-weight-normal">
+            Skills:
+        </div>
+        <div class="col-sm-6 p-2 mb-1 border-grey">
+          {{ obUser.property.skills }}
+        </div>
+        
+        <div class="col-sm-6 p-2 mb-1 grey lighten-4 font-weight-normal">
+            Resume:
+        </div>
+        <div class="col-sm-6 p-2 mb-1 border-grey">
+            {{ obUser.property.resume }} 
+        </div>
+        
+             <div class="col-sm-6 p-2 mb-1 grey lighten-4 font-weight-normal">
+            Age:
+        </div>
+        <div class="col-sm-6 p-2 mb-1 border-grey">
+           {{ obUser.property.age }} 
+        </div>
+        
+        <div class="col-sm-6 p-2 mb-1 grey lighten-4 font-weight-normal">
+            Gender:
+        </div>
+        <div class="col-sm-6 p-2 mb-1 border-grey">
+           {{ obUser.property.gender }}
+        </div>
+         
+       <div class="col-sm-6 p-2 mb-1 grey lighten-4 font-weight-normal">
+            Institution:
+        </div>
+        <div class="col-sm-6 p-2 mb-1 border-grey">
+         
+         {{ obUser.property.institution }}
+            
+        </div>
+        
+        <div class="col-sm-6 p-2 mb-1 grey lighten-4 font-weight-normal">
+            About (Bio):
+        </div>
+        <div class="col-sm-6 p-2 mb-1 border-grey">
+        
+         {{ obUser.property.about }} 
+            
+        </div>  
+    
+        {% else %}
+          
+        {% endif %}
+
+        
+     
+        
+    </div>
+    <a href="{{ 'user-page'|page }}" class="btn btn-amber z-depth-0 float-right mr-0">Update Profile</a>
+{% else %}
+
+<div>
+
+    You will need to login to view this page.
+
+</div>
+
+{% endif %}

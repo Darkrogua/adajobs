@@ -1,0 +1,82 @@
+description = "User Page"
+[viewBag]
+[UserData]
+==      
+{% set obUser = UserData.get %}  
+<form href="{{ 'user_page'|page }}">
+
+    <label for="field-company-name">Name</label>
+    <input class="form-control mb-4" type="text" id="field-name" name="name" value="{{ obUser.name }}" required>
+    
+    <label for="field-company-name">Last Name</label>
+    <input class="form-control mb-4" type="text" id="field-last_name" name="last_name" value="{{ obUser.last_name }}">    
+
+    <label for="field-email">Email</label>
+
+    <input class="form-control mb-4" type="email" id="field-email" placeholder="Email" name="email" value="{{ obUser.email }}">
+
+    {% if arError.message is not empty and arError.field == 'email' %}
+
+        <p>{{ arError.message }}</p>
+
+    {% endif %}
+    
+    
+    <label for="field-company-name">Phone</label>
+    <input class="form-control mb-4" type="text" id="field-phone" name="phone" value="{{ obUser.phone }}" required>
+    
+    {% if obUser.property.user_role_id == 2 %}
+    
+    
+    <label for="field-company-name">Company Name</label>
+    <input class="form-control mb-4" type="text" id="field-company_name" name="property[company_name]" value="{{ obUser.property.company_name }}">
+    
+    <label for="field-company-name">Company Website</label>
+    <input class="form-control mb-4" type="text" id="field-company_website" name="property[company_website]" value="{{ obUser.property.company_website }}">
+    
+    <label for="field-company-name">Company Description</label>
+    <input class="form-control mb-4" type="text" id="field-company_description" name="property[company_description]" value="{{ obUser.property.company_description }}">
+    
+    <label for="field-company-name">Location (Suburb)</label>
+    <input class="form-control mb-4" type="text" id="field-suburb" name="property[suburb]" value="{{ obUser.property.suburb }}">
+    
+    {% elseif obUser.property.user_role_id == 1 %}
+    
+    <label for="field-company-name">IC No.</label>
+    <input class="form-control mb-4" type="text" id="field-ic" name="property[ic]" value="{{ obUser.property.ic }}">
+  
+    <label for="field-company-name">Skills</label>
+    <input class="form-control mb-4" type="text" id="field-skills" name="property[skills]" value="{{ obUser.property.skills }}">
+
+    <label for="field-company-name">Resume</label>     <br /><br />
+    <input type="file" id="field-resume" name="property[resume]" value="Resume">
+    <br /><br />
+    <label for="field-company-name">Age</label>
+    <input class="form-control mb-4" type="text" id="field-age" name="property[age]" value="{{ obUser.property.age }}">
+    
+    <label for="field-company-name">Gender</label>  
+    <br /><br /> 
+    <input type="radio" name="property[gender]" value="Male"> Male<br>
+    <input type="radio" name="property[gender]" value="Female"> Female<br> 
+    
+    <label for="field-company-name">Institution</label>
+    <input class="form-control mb-4" type="text" id="field-institution" name="property[institution]" value="{{ obUser.property.institution }}">
+    
+    <label for="field-company-name">About (Bio)</label>
+    <input class="form-control mb-4" type="text" id="field-about" name="property[about]" value="{{ obUser.property.about }}">
+       
+        
+    {% else %}
+    
+    {% endif %}             
+              
+
+    <button type="submit">Submit</button>
+
+</form>
+
+{% if arError.message is not empty %}
+
+    <p>{{ arError.message }}</p>
+
+{% endif %}

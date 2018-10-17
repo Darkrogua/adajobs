@@ -1,0 +1,26 @@
+<h4 class="job-title">
+    {{ model.name }}
+    <a href="javascript:void(0);" data-request="onFav"
+       data-request-data="job_id: {{ model.id }}"
+    >
+        {% if model.favers.contains(UserData.get.id) %}
+        Remove from favs
+        {% else %}
+        Add to favs
+        {% endif %}
+    </a>
+</h4>
+<div class="job-date">Posted: {{ model.created_at|date('F j, Y') }}</div>
+<div class="job-type">Type: {{ model.type.name }}</div>
+<div class="job-type">Categories: {{ model.categories.pluck('name').implode(', ') }}</div>
+<div class="job-salary">Salary: {{ model.salary_min }}{{ model.salary_max ? ' - '~model.salary_max : '' }}</div>
+<div class="job-city">{{ model.user.city.name }}, {{ model.user.city.state.name }}</div>
+<a href="javascript:void(0);" data-request="onApply"
+   data-request-data="job_id: {{ model.id }}"
+>
+    {% if model.applications.contains('user_id', UserData.get.id) %}
+    Cancel application
+    {% else %}
+    Apply
+    {% endif %}
+</a>

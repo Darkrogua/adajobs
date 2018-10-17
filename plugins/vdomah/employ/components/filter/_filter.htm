@@ -1,0 +1,26 @@
+{% if filter.type == 'options' or filter.type == 'class' %}
+    {% for option_id, option in filter.options %}
+        <div>
+            <label>
+                <input type="{{ filter.input }}"
+                       class="filter-input filter-{{ filter.input }}"
+                       name="{{ filter.code }}"
+                       value="{{ option_id }}"
+                    {{ init_values[filter.code] and option_id in init_values[filter.code] ? 'checked' : '' }}
+                > {{ option }}
+            </label>
+        </div>
+    {% endfor %}
+{% endif %}
+
+{% if filter.type == 'range' %}
+<div class="filter-range">
+    <label style="width: 45%;">
+        <input name="{{ filter.min }}" data-code="{{ filter.code }}" value="{{ init_values[filter.code][0] }}" style="max-width: 100%">
+    </label>
+    <label style="width: 45%;">
+        <input name="{{ filter.max }}" data-code="{{ filter.code }}" value="{{ init_values[filter.code][1] }}" style="max-width: 100%">
+    </label>
+</div>
+{% endif %}
+

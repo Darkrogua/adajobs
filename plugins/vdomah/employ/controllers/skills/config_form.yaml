@@ -1,0 +1,10 @@
+name: Skills
+form: $/vdomah/employ/models/skill/fields.yaml
+modelClass: Vdomah\Employ\Models\Skill
+defaultRedirect: vdomah/employ/skills
+create:
+    redirect: 'vdomah/employ/skills/update/:id'
+    redirectClose: vdomah/employ/skills
+update:
+    redirect: vdomah/employ/skills
+    redirectClose: vdomah/employ/skills

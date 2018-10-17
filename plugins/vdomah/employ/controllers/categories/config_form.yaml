@@ -1,0 +1,10 @@
+name: Categories
+form: $/vdomah/employ/models/category/fields.yaml
+modelClass: Vdomah\Employ\Models\Category
+defaultRedirect: vdomah/employ/categories
+create:
+    redirect: 'vdomah/employ/categories/update/:id'
+    redirectClose: vdomah/employ/categories
+update:
+    redirect: vdomah/employ/categories
+    redirectClose: vdomah/employ/categories

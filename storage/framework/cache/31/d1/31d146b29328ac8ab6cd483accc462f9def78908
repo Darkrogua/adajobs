@@ -1,0 +1,28 @@
+1539353765a:1:{s:14:"footer/CTA.htm";a:6:{s:8:"fileName";s:14:"footer/CTA.htm";s:7:"content";s:328:"<!--Call to action-->
+<div class="call-to-action">
+    <!--<h4 class="mb-5">Your preferred Job Specialists</h4>-->
+    <ul>
+        <li>
+            <h5>Upload your CV now</h5></li>
+        <li><a target="_blank" href="#!" class="btn btn-danger" rel="nofollow">Sign up!</a></li>
+    </ul>
+</div>
+<!--/.Call to action-->";s:5:"mtime";i:1539340102;s:6:"markup";s:328:"<!--Call to action-->
+<div class="call-to-action">
+    <!--<h4 class="mb-5">Your preferred Job Specialists</h4>-->
+    <ul>
+        <li>
+            <h5>Upload your CV now</h5></li>
+        <li><a target="_blank" href="#!" class="btn btn-danger" rel="nofollow">Sign up!</a></li>
+    </ul>
+</div>
+<!--/.Call to action-->";s:4:"code";N;s:12:"parsedMarkup";s:328:"<!--Call to action-->
+<div class="call-to-action">
+    <!--<h4 class="mb-5">Your preferred Job Specialists</h4>-->
+    <ul>
+        <li>
+            <h5>Upload your CV now</h5></li>
+        <li><a target="_blank" href="#!" class="btn btn-danger" rel="nofollow">Sign up!</a></li>
+    </ul>
+</div>
+<!--/.Call to action-->";}}

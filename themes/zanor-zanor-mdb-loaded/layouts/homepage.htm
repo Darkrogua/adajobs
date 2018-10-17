@@ -1,0 +1,129 @@
+description = "Homepage"
+
+[employSearch]
+
+[employJobs]
+mode = "all"
+==
+{% partial 'site/head' %}
+{% partial 'site/nav' %}
+
+<section>
+    {% partial '_homepageIntro' %}
+</section>
+
+<div class="container py-5">
+
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header red white-text">Featured Jobs</div>
+                <div class="card-body">
+                    <h4 class="card-title">Job Title</h4>
+                    <p class="card-text">Salary: 100 - 500</p>
+                    <p class="card-text">Location: Johor</p>
+                    <a href="#!" class="btn red z-depth-0 py-2">View Job</a>
+                </div>
+                <div class="card-footer d-flex justify-content-center">
+                    <a href="{{ 'jobs'|page }}" class="red-text">View All Jobs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header red white-text">Featured Company</div>
+                <div class="card-body">
+                    <h4 class="card-title">Company Name</h4>
+                    <p class="card-text">Location: Johor</p>
+                    <a href="#!" class="btn red z-depth-0 py-2">View Jobs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header red white-text">Browse by Category</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <ul>
+                                <li>Public Service</li>
+                                <li>Training</li>
+                                <li>Security & Safety</li>
+                                <li>Banking</li>
+                                <li>Financial Services</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul>
+                                <li>Public Service</li>
+                                <li>Training</li>
+                                <li>Security & Safety</li>
+                                <li>Banking</li>
+                                <li>Financial Services</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul>
+                                <li>Public Service</li>
+                                <li>Training</li>
+                                <li>Security & Safety</li>
+                                <li>Banking</li>
+                                <li>Financial Services</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header red white-text">Choose City or Region</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <ul>
+                                <li>Kota Bharu</li>
+                                <li>Kuala Lumpur</li>
+                                <li>Klang</li>
+                                <li>Kampung Baru Subang</li>
+                                <li>Johor Bahru</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul>
+                                <li>Kota Bharu</li>
+                                <li>Kuala Lumpur</li>
+                                <li>Klang</li>
+                                <li>Kampung Baru Subang</li>
+                                <li>Johor Bahru</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <ul>
+                                <li>Kota Bharu</li>
+                                <li>Kuala Lumpur</li>
+                                <li>Klang</li>
+                                <li>Kampung Baru Subang</li>
+                                <li>Johor Bahru</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% page %}
+
+</div>
+
+{% partial 'site/footer' %}

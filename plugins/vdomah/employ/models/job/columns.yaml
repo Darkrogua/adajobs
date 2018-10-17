@@ -1,0 +1,31 @@
+columns:
+    id:
+        label: id
+        type: number
+        searchable: true
+        sortable: true
+    name:
+        label: 'vdomah.employ::lang.fields.name'
+        type: text
+        searchable: true
+        sortable: true
+    user:
+        label: 'vdomah.employ::lang.fields.user'
+        type: relation
+        relation: user
+        select: name
+        searchable: false
+    type:
+        label: 'vdomah.employ::lang.fields.type'
+        type: relation
+        relation: type
+        select: name
+        searchable: false
+        sortable: false
+    categories_str:
+        label: 'vdomah.employ::lang.fields.categories'
+        searchable: false
+    created_at:
+        label: 'vdomah.employ::lang.fields.created_at'
+        type: datetime
+        searchable: true

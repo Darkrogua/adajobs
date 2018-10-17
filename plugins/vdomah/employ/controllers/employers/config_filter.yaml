@@ -1,0 +1,7 @@
+scopes:
+
+    category:
+        label: Skills
+        modelClass: Vdomah\Employ\Models\Skill
+        scope: skillsFilter
+        nameFrom: name

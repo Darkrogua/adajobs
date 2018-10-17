@@ -1,0 +1,12 @@
+scopes:
+
+    category:
+        label: Category
+        modelClass: Vdomah\Employ\Models\Category
+        scope: categoriesFilter
+        nameFrom: name
+    type:
+        label: Type
+        modelClass: Vdomah\Employ\Models\Type
+        conditions: type_id in (:filtered)
+        nameFrom: name

@@ -1,0 +1,4 @@
+title: Frequencies
+modelClass: Vdomah\Employ\Models\Frequency
+toolbar:
+    buttons: reorder_toolbar

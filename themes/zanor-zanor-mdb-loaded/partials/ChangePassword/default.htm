@@ -1,0 +1,22 @@
+description = "Change Password"
+
+[viewBag]
+==
+{% set arError = ChangePassword.getErrorMessage %}
+
+<form href="{{ 'change_password'|page }}">
+
+    <label for="field-old-password">Old password</label>
+    <input type="password" id="field-old-password" name="old_password">
+
+    <label for="field-password">Password</label>
+    <input type="password" id="field-password" name="password">
+
+    <label for="field-password-confirmation">Password confirmation</label>
+    <input type="password" id="field-password-confirmation" name="password_confirmation">
+
+    <button type="submit">Submit</button>
+</form>
+{% if arError.message is not empty %}
+    <p>{{ arError.message }}</p>
+{% endif %}

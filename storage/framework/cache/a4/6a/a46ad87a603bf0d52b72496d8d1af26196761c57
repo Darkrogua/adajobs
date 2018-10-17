@@ -1,0 +1,65 @@
+1539353765a:1:{s:18:"site/headerTop.htm";a:7:{s:8:"fileName";s:18:"site/headerTop.htm";s:7:"content";s:924:"[UserData]
+
+[viewBag]
+==
+<div class="container py-3">
+
+    <div class="row">
+
+        <div class="col-md-6 justify-content-sm-center justify-content-md-start">
+
+            <a href="{{ '/'|app }}"><img src="{{ 'site/logo.jpg'|media }}" alt=""></a>
+
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-sm-center justify-content-md-end">
+
+            {% set obUser = UserData.get %}
+
+            {% if obUser.isNotEmpty %}
+
+                <a href="{{ 'profile'|page }}" class="btn btn-sm red z-depth-0">My Profile</a>
+                <a href="{{ 'logout'|page }}" class="btn btn-sm red z-depth-0">Logout</a>
+
+            {% else %}
+
+                <a href="{{ 'login'|page }}" class="btn btn-sm red z-depth-0">Login</a>
+                <a href="{{ 'register'|page }}" class="btn btn-sm red z-depth-0">Register</a>
+
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</div>";s:5:"mtime";i:1539340140;s:6:"markup";s:895:"<div class="container py-3">
+
+    <div class="row">
+
+        <div class="col-md-6 justify-content-sm-center justify-content-md-start">
+
+            <a href="{{ '/'|app }}"><img src="{{ 'site/logo.jpg'|media }}" alt=""></a>
+
+        </div>
+
+        <div class="col-md-6 d-flex justify-content-sm-center justify-content-md-end">
+
+            {% set obUser = UserData.get %}
+
+            {% if obUser.isNotEmpty %}
+
+                <a href="{{ 'profile'|page }}" class="btn btn-sm red z-depth-0">My Profile</a>
+                <a href="{{ 'logout'|page }}" class="btn btn-sm red z-depth-0">Logout</a>
+
+            {% else %}
+
+                <a href="{{ 'login'|page }}" class="btn btn-sm red z-depth-0">Login</a>
+                <a href="{{ 'register'|page }}" class="btn btn-sm red z-depth-0">Register</a>
+
+            {% endif %}
+
+        </div>
+
+    </div>
+
+</div>";s:4:"code";N;s:8:"UserData";a:0:{}s:7:"viewBag";a:0:{}}}

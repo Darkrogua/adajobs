@@ -1,0 +1,27 @@
+<form data-request="employSearch::onFilter" data-request-success="updateHistory(data)">
+    <div class="row">
+        <div class="col-sm-3">
+            <input name="title" placeholder="Enter job title or employer name" style="width: 100%" />
+        </div>
+        <div class="col-sm-3">
+            <input name="location" placeholder="All locations" style="width: 100%" />
+        </div>
+        <div class="col-sm-3">
+            <select name="category_id" style="width: 100%">
+                <option value="">- Not chosen -</option>
+                {% for category in __SELF__.categories %}
+                <option value="{{ category.id }}">{{ category.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-sm-3">
+            <button class="btn btn-success">Search</button>
+        </div>
+    </div>
+</form>
+
+<script>
+    function updateHistory(data) {
+        console.log('data', data)
+    }
+</script>

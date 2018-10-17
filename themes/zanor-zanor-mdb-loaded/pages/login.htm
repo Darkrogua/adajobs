@@ -1,0 +1,23 @@
+title = "Login"
+url = "/login"
+layout = "noSidebar"
+is_hidden = 0
+role = 0
+permission = 0
+anonymous_only = 0
+logged_only = 0
+
+[Login]
+mode = "submit"
+redirect_on = 1
+redirect_page = "profile"
+==
+<div class="row d-flex justify-content-around">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                {% component 'Login' %}
+            </div>
+        </div>
+    </div>
+</div>

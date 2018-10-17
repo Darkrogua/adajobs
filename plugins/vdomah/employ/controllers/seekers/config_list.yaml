@@ -1,0 +1,13 @@
+list: $/lovata/buddies/models/user/columns.yaml
+modelClass: Lovata\Buddies\Models\User
+title: Users
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'vdomah/employ/seekers/update/:id'
+filter: config_filter.yaml

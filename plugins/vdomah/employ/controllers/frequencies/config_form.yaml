@@ -1,0 +1,10 @@
+name: Frequencies
+form: $/vdomah/employ/models/frequency/fields.yaml
+modelClass: Vdomah\Employ\Models\Frequency
+defaultRedirect: vdomah/employ/frequencies
+create:
+    redirect: 'vdomah/employ/frequencies/update/:id'
+    redirectClose: vdomah/employ/frequencies
+update:
+    redirect: vdomah/employ/frequencies
+    redirectClose: vdomah/employ/frequencies

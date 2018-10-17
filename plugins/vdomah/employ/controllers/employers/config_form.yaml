@@ -1,0 +1,11 @@
+name: Users
+form: $/lovata/buddies/models/user/fields.yaml
+modelClass: Lovata\Buddies\Models\User
+defaultRedirect: vdomah/employ/employers
+create:
+    form: $/lovata/buddies/models/user/create_fields.yaml
+    redirect: 'vdomah/employ/employers/update/:id'
+    redirectClose: vdomah/employ/employers
+update:
+    redirect: vdomah/employ/employers
+    redirectClose: vdomah/employ/employers

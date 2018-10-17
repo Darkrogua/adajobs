@@ -1,0 +1,33 @@
+1539353764a:1:{s:12:"register.htm";a:14:{s:8:"fileName";s:12:"register.htm";s:7:"content";s:521:"title = "Register"
+url = "/register"
+layout = "noSidebar"
+is_hidden = 0
+role = 0
+permission = 0
+anonymous_only = 0
+logged_only = 0
+
+[Registration]
+mode = "submit"
+redirect_on = 1
+redirect_page = "profile"
+activation = "activation_on"
+force_login = 1
+==
+<div class="row d-flex justify-content-around">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                {% component 'Registration' %}
+            </div>
+        </div>
+    </div>
+</div>";s:5:"mtime";i:1539340110;s:6:"markup";s:252:"<div class="row d-flex justify-content-around">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                {% component 'Registration' %}
+            </div>
+        </div>
+    </div>
+</div>";s:4:"code";N;s:5:"title";s:8:"Register";s:3:"url";s:9:"/register";s:6:"layout";s:9:"noSidebar";s:9:"is_hidden";s:1:"0";s:4:"role";s:1:"0";s:10:"permission";s:1:"0";s:14:"anonymous_only";s:1:"0";s:11:"logged_only";s:1:"0";s:12:"Registration";a:5:{s:4:"mode";s:6:"submit";s:11:"redirect_on";s:1:"1";s:13:"redirect_page";s:7:"profile";s:10:"activation";s:13:"activation_on";s:11:"force_login";s:1:"1";}}}

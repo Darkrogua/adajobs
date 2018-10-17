@@ -1,0 +1,13 @@
+{% if models == null %}
+    {% set models = __SELF__.models %}
+{% endif %}
+
+{% for model in models %}
+<div id="job-block-{{ model.id }}" class="job-block" style="margin-bottom: 20px">
+    {% partial __SELF__~'::_item' model=model %}
+</div>
+{% else %}
+<div>
+    No results found
+</div>
+{% endfor %}

@@ -1,0 +1,17 @@
+1539353764a:1:{s:13:"user-page.htm";a:14:{s:8:"fileName";s:13:"user-page.htm";s:7:"content";s:289:"title = "User Page"
+url = "/user-page"
+layout = "withSidebar"
+is_hidden = 0
+role = 0
+permission = 0
+anonymous_only = 0
+logged_only = 0
+
+[UserPage]
+slug = "{{ :slug }}"
+slug_required = 0
+mode = "submit"
+redirect_on = 1
+redirect_page = "profile"
+==
+{% component 'UserPage' %}";s:5:"mtime";i:1538035500;s:6:"markup";s:26:"{% component 'UserPage' %}";s:4:"code";N;s:5:"title";s:9:"User Page";s:3:"url";s:10:"/user-page";s:6:"layout";s:11:"withSidebar";s:9:"is_hidden";s:1:"0";s:4:"role";s:1:"0";s:10:"permission";s:1:"0";s:14:"anonymous_only";s:1:"0";s:11:"logged_only";s:1:"0";s:8:"UserPage";a:5:{s:4:"slug";s:11:"{{ :slug }}";s:13:"slug_required";s:1:"0";s:4:"mode";s:6:"submit";s:11:"redirect_on";s:1:"1";s:13:"redirect_page";s:7:"profile";}}}

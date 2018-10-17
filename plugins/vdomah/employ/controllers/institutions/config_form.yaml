@@ -1,0 +1,10 @@
+name: Institutions
+form: $/vdomah/employ/models/institution/fields.yaml
+modelClass: Vdomah\Employ\Models\Institution
+defaultRedirect: vdomah/employ/institutions
+create:
+    redirect: 'vdomah/employ/institutions/update/:id'
+    redirectClose: vdomah/employ/institutions
+update:
+    redirect: vdomah/employ/institutions
+    redirectClose: vdomah/employ/institutions

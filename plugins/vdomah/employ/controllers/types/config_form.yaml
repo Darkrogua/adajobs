@@ -1,0 +1,10 @@
+name: Types
+form: $/vdomah/employ/models/type/fields.yaml
+modelClass: Vdomah\Employ\Models\Type
+defaultRedirect: vdomah/employ/types
+create:
+    redirect: 'vdomah/employ/types/update/:id'
+    redirectClose: vdomah/employ/types
+update:
+    redirect: vdomah/employ/types
+    redirectClose: vdomah/employ/types

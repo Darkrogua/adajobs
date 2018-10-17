@@ -1,0 +1,43 @@
+1539353765a:1:{s:18:"footer/column2.htm";a:6:{s:8:"fileName";s:18:"footer/column2.htm";s:7:"content";s:284:"<h5 class="title mb-3"><strong>Column Two</strong></h5>
+<ul>
+    <li>
+        <a href="#!">Link 1</a>
+    </li>
+    <li>
+        <a href="#!">Link 2</a>
+    </li>
+    <li>
+        <a href="#!">Link 3</a>
+    </li>
+    <li>
+        <a href="#!">Link 4</a>
+    </li>
+</ul>";s:5:"mtime";i:1539340101;s:6:"markup";s:284:"<h5 class="title mb-3"><strong>Column Two</strong></h5>
+<ul>
+    <li>
+        <a href="#!">Link 1</a>
+    </li>
+    <li>
+        <a href="#!">Link 2</a>
+    </li>
+    <li>
+        <a href="#!">Link 3</a>
+    </li>
+    <li>
+        <a href="#!">Link 4</a>
+    </li>
+</ul>";s:4:"code";N;s:12:"parsedMarkup";s:284:"<h5 class="title mb-3"><strong>Column Two</strong></h5>
+<ul>
+    <li>
+        <a href="#!">Link 1</a>
+    </li>
+    <li>
+        <a href="#!">Link 2</a>
+    </li>
+    <li>
+        <a href="#!">Link 3</a>
+    </li>
+    <li>
+        <a href="#!">Link 4</a>
+    </li>
+</ul>";}}

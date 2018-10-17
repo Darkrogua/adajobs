@@ -1,0 +1,39 @@
+1.0.1:
+    - 'Initialize plugin. Add city_id, institution_id to lovata_buddies_users'
+    - migration1012.php
+1.0.2:
+    - 'Created table vdomah_employ_jobs'
+    - builder_table_create_vdomah_employ_jobs.php
+1.0.3:
+    - 'Created table vdomah_employ_fav_user'
+    - builder_table_create_vdomah_employ_fav_user.php
+1.0.4:
+    - 'Created table vdomah_employ_job_applicant'
+    - builder_table_create_vdomah_employ_job_applicant.php
+1.0.5:
+    - 'Created table vdomah_employ_types'
+    - builder_table_create_vdomah_employ_types.php
+1.0.6:
+    - 'Created table vdomah_employ_frequencies'
+    - builder_table_create_vdomah_employ_frequencies.php
+1.0.7:
+    - 'Created table vdomah_employ_applications'
+    - builder_table_create_vdomah_employ_applications.php
+1.0.8:
+    - 'Created table vdomah_employ_categories'
+    - builder_table_create_vdomah_employ_categories.php
+1.0.9:
+    - 'Created table vdomah_employ_skills'
+    - builder_table_create_vdomah_employ_skills.php
+1.0.10:
+    - 'Created table vdomah_employ_skill_user'
+    - builder_table_create_vdomah_employ_skill_user.php
+1.0.11:
+    - 'Created table vdomah_employ_category_job'
+    - builder_table_create_vdomah_employ_category_job.php
+1.0.12:
+    - 'Created table vdomah_employ_institutions'
+    - builder_table_create_vdomah_employ_institutions.php
+1.0.13:
+    - 'Seed'
+    - jobs_seeder.php

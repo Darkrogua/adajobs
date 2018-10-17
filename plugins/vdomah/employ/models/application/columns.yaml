@@ -1,0 +1,6 @@
+columns:
+    user_id:
+        label: 'vdomah.employ::lang.fields.user'
+        type: text
+        searchable: true
+        sortable: true

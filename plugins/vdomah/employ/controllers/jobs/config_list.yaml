@@ -1,0 +1,13 @@
+list: $/vdomah/employ/models/job/columns.yaml
+modelClass: Vdomah\Employ\Models\Job
+title: Jobs
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'vdomah/employ/jobs/update/:id'
+filter: config_filter.yaml

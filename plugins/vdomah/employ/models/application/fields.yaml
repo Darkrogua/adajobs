@@ -1,0 +1,6 @@
+fields:
+    text:
+        label: 'vdomah.employ::lang.fields.text'
+        span: auto
+        size: ''
+        type: textarea

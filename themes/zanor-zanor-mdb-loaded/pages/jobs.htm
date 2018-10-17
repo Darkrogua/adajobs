@@ -1,0 +1,31 @@
+title = "Jobs"
+url = "/jobs"
+layout = "noSidebar"
+is_hidden = 0
+role = 0
+permission = 0
+anonymous_only = 0
+logged_only = 0
+
+[employJobs]
+mode = "all"
+
+[employSearch]
+
+[employFilter]
+jobs_list_selector = "#job-list"
+==
+<div>
+    {% component 'employSearch' %}
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <div id="job-list">
+            {% component 'employJobs' %}
+        </div>
+    </div>
+    <div class="col-md-4">
+        {% component 'employFilter' %}
+    </div>
+</div>

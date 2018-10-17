@@ -1,0 +1,4 @@
+title: Types
+modelClass: Vdomah\Employ\Models\Type
+toolbar:
+    buttons: reorder_toolbar

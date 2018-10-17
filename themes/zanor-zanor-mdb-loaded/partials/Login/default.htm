@@ -1,0 +1,45 @@
+description = "Login"
+
+[viewBag]
+==
+{% set arError = Login.getErrorMessage %}
+{% set arForm = Login.getOldFormData %}
+
+<form href="{{ 'login'|page }}" class="border border-light p-5">
+    <p class="h4 text-center mb-4">Sign in</p>
+
+    <div class="md-form">
+        <label for="field-email">Email</label>
+        <input class="form-control mb-4" type="email" id="field-email" name="email" value="{{ arForm.email }}">
+        {% if arError.message is not empty and arError.field == 'email' %}
+            <p class="font-weight-normal red-text">{{ arError.message }}</p>
+        {% endif %}
+    </div>
+
+    <div class="md-form">
+        <label for="field-password">Password</label>
+        <input class="form-control mb-4" type="password" id="field-password" name="password">
+    </div>
+
+    <div class="d-flex justify-content-around">
+        <!-- Remember me -->
+        <div class="custom-control custom-checkbox">
+            <input class="custom-control-input" type="checkbox" id="field-remember_me" name="remember_me">
+            <label class="custom-control-label" for="field-remember_me">Remember me</label>
+        </div>
+        <div>
+            <a href="#">Forgot Password</a>
+        </div>
+    </div>
+
+    <button class="btn btn-info btn-block my-4" type="submit">Sign In</button>
+
+    <!-- Register -->
+    <p class="text-center">Not a member?
+        <a href="{{ 'register'|page }}">Register</a>
+    </p>
+</form>
+
+{% if arError.message is not empty %}
+    <p class="font-weight-normal red-text">{{ arError.message }}</p>
+{% endif %}

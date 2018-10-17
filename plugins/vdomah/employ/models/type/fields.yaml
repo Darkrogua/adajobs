@@ -1,0 +1,5 @@
+fields:
+    name:
+        label: 'vdomah.employ::lang.fields.name'
+        span: auto
+        type: text

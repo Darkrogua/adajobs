@@ -1,0 +1,21 @@
+1539353764a:1:{s:11:"welcome.htm";a:13:{s:8:"fileName";s:11:"welcome.htm";s:7:"content";s:231:"title = "Welcome"
+url = "/"
+layout = "homepage"
+is_hidden = 0
+role = 0
+permission = 0
+anonymous_only = 0
+logged_only = 0
+
+==
+<?php
+function onStart()
+{
+    $this->addCss('assets/css/halfpageCarousel.css');
+}
+?>
+==
+";s:5:"mtime";i:1539340110;s:6:"markup";s:0:"";s:4:"code";s:79:"function onStart()
+{
+    $this->addCss('assets/css/halfpageCarousel.css');
+}";s:5:"title";s:7:"Welcome";s:3:"url";s:1:"/";s:6:"layout";s:8:"homepage";s:9:"is_hidden";s:1:"0";s:4:"role";s:1:"0";s:10:"permission";s:1:"0";s:14:"anonymous_only";s:1:"0";s:11:"logged_only";s:1:"0";}}
